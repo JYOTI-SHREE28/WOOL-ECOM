@@ -1,0 +1,193 @@
+<!-- 
+Responsive HTML Table With Pure CSS - Web Design/UI Design
+
+Code written by:
+👨🏻‍⚕️ Coding Design (Jeet Saru)
+
+> You can do whatever you want with the code. However if you love my content, you can **SUBSCRIBED** my YouTube Channel.
+
+🌎link: www.youtube.com/codingdesign 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert | Export html Table to CSV & EXCEL File</title>
+    <link rel="stylesheet" type="text/css" href="analysis.css">
+</head>
+
+<body>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>Find the best price</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="images/search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Customer <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Location <span class="icon-arrow">&UpArrow;</span></th>
+                        <th>Avg price(INR) <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Max price(INR) <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> <img src="https://i.pinimg.com/236x/b8/9b/82/b89b829b34ae45ea8c0ed2adea52449f.jpg" alt="">TELENGANA</td>
+                        <td> INDIA </td>
+                        <td> 560/- </td>
+                        <td>
+                            <p class="status delivered">In-stock</p>
+                        </td>
+                        <td> <strong> 1120/- </strong></td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td><img src="https://i.pinimg.com/236x/40/f1/1b/40f11ba6d34bf52724ef090ec7e2578a.jpg" alt=""> HARYANA </td>
+                        <td> INDIA </td>
+                        <td> 660/- </td>
+                        <td>
+                            <p class="status cancelled">Not available</p>
+                        </td>
+                        <td> <strong>1320/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td><img src="https://i.pinimg.com/236x/c8/0a/85/c80a85ffb6058333baff98494265de19.jpg" alt=""> WEST BENGAL </td>
+                        <td> INDIA </td>
+                        <td> 580/- </td>
+                        <td>
+                            <p class="status shipped">Shipped</p>
+                        </td>
+                        <td> <strong>2120/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td><img src="https://i.pinimg.com/236x/c8/0a/85/c80a85ffb6058333baff98494265de19.jpg" alt=""> UTTAR PRADESH </td>
+                        <td> INDIA </td>
+                        <td> 300/- </td>
+                        <td>
+                            <p class="status delivered">In-stock</p>
+                        </td>
+                        <td> <strong>920/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td><img src="https://i.pinimg.com/236x/e9/fd/ec/e9fdec41d794b793c33e364213c3f511.jpg" alt=""> KARNATAKA </td>
+                        <td> INDIA </td>
+                        <td> 670/- </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>890/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td><img src="https://i.pinimg.com/564x/94/6a/98/946a98e361ce66fff1e1c548f6ae8640.jpg" alt=""> HIMACHAL PRADESH </td>
+                        <td> INDIA </td>
+                        <td> 840/- </td>
+                        <td>
+                            <p class="status cancelled">Not available</p>
+                        </td>
+                        <td> <strong>1120/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 7</td>
+                        <td><img src="https://i.pinimg.com/236x/72/4e/31/724e313defb0bbcaf45ce604a8da7f7e.jpg" alt=""> MAHARASHTRA </td>
+                        <td> INDIA</td>
+                        <td> 350/- </td>
+                        <td>
+                            <p class="status delivered">In-stock</p>
+                        </td>
+                        <td> <strong>1340/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 8</td>
+                        <td><img src="https://i.pinimg.com/236x/40/f1/1b/40f11ba6d34bf52724ef090ec7e2578a.jpg" alt=""> GUJRAT </td>
+                        <td> INDIA </td>
+                        <td> 720/- </td>
+                        <td>
+                            <p class="status pending">pending</p>
+                        </td>
+                        <td> <strong>920/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="https://i.pinimg.com/564x/94/6a/98/946a98e361ce66fff1e1c548f6ae8640.jpg" alt=""> JAMMU KASHMIR </td>
+                        <td> INDIA </td>
+                        <td> 6990/- </td>
+                        <td>
+                            <p class="status cancelled">Not available</p>
+                        </td>
+                        <td> <strong>1130/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="https://i.pinimg.com/236x/50/dd/ed/50dded60757656972a64d114cd99ba6f.jpg" alt=""> RAJASTHAN </td>
+                        <td> INDIA </td>
+                        <td> 560/- </td>
+                        <td>
+                            <p class="status cancelled">Not available</p>
+                        </td>
+                        <td> <strong>1120/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="https://i.pinimg.com/236x/49/e7/de/49e7de6ebdca7cbcba72a41a084e9c03.jpg" alt=""> ANDRA PRADESH </td>
+                        <td>INDIA </td>
+                        <td> 530/- </td>
+                        <td>
+                            <p class="status cancelled">Not available</p>
+                        </td>
+                        <td> <strong>720/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="https://i.pinimg.com/236x/72/4e/31/724e313defb0bbcaf45ce604a8da7f7e.jpg" alt=""> TAMIL NADU </td>
+                        <td> INDIA </td>
+                        <td> 560/- </td>
+                        <td>
+                            <p class="status cancelled">Not available</p>
+                        </td>
+                        <td> <strong>920/-</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="https://i.pinimg.com/236x/e9/fd/ec/e9fdec41d794b793c33e364213c3f511.jpg" alt=""> PUNJAB </td>
+                        <td>INDIA </td>
+                        <td>700/-  </td>
+                        <td>
+                            <p class="status cancelled">Not available</p>
+                        </td>
+                        <td> <strong>980/-</strong> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="analysis.css"></script>
+
+</body>
+
+</html>
